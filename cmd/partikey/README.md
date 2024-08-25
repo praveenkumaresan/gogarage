@@ -1,4 +1,4 @@
-git s# Kafka Partition Calculator CLI
+# Kafka Partition Calculator CLI
 
 This is a command-line tool called `partikey` written in Golang for calculating the Kafka partition for a given key using both Murmur2 and Murmur3 hashing algorithms. 
 It connects to a Kafka broker, retrieves partition information for a specified topic, and computes which partition a given key would be assigned to according to the two hashing strategies. 
