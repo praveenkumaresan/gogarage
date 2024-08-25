@@ -44,7 +44,7 @@ func initializeLogging() {
 
 // printUsage displays the usage instructions for the CLI tool.
 func printUsage() {
-	fmt.Println("Usage: kafka-partitioner --topic <topic> --partitionkey <partitionkey> --broker <broker> [--hash Murmur2|Murmur3]")
+	fmt.Println("Usage: partikey --topic <topic> --partitionkey <partitionkey> --broker <broker> [--hash Murmur2|Murmur3]")
 	fmt.Println("\nOptions:")
 	fmt.Println("  --topic         The Kafka topic to query.")
 	fmt.Println("  --partitionkey  The Kafka partition key to calculate the partition for.")
