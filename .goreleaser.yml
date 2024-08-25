@@ -3,7 +3,7 @@ project_name: gogarage
 
 builds:
   - id: "partikey"
-    main: ./cmd/partikey
+    main: ./cmd/partikey/main.go
     binary: partikey
     goos:
       - linux
@@ -24,6 +24,10 @@ archives:
     format_overrides:
       - goos: windows
         format: zip
+
+checksum:
+  name_template: "{{ .ProjectName }}_{{ .Version }}_checksums.txt"
+  algorithm: sha256
 
 release:
   github:
